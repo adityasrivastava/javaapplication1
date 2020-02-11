@@ -1,4 +1,4 @@
-package org.example;
+package com.aditya.sendemail;
 
 import static org.junit.Assert.assertTrue;
 

@@ -16,7 +16,7 @@ public class ItemTax {
     }
 
     public BigDecimal getTotal(){
-        return (cartItem.getItem().getPrice().getPrice()
+        return (cartItem.getItem().getPrice()
                     .multiply(new BigDecimal(cartItem.getQuantity())))
                     .add(taxed);
     }

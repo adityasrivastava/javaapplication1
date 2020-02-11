@@ -1,16 +1,18 @@
 package org.example.item;
 
+import java.math.BigDecimal;
+
 public class Item {
 
     private String name;
 
-    private Price price;
+    private BigDecimal price;
 
     private ItemType type;
 
     private boolean imported;
 
-    public Item(String name, Price price, ItemType type, boolean imported){
+    public Item(String name, BigDecimal price, ItemType type, boolean imported){
         this.name = name;
         this.price = price;
         this.type = type;
@@ -21,7 +23,7 @@ public class Item {
         return name;
     }
 
-    public Price getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 

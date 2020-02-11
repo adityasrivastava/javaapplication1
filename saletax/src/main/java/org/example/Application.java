@@ -2,10 +2,10 @@ package org.example;
 
 import org.example.item.Item;
 import org.example.item.ItemType;
-import org.example.item.Price;
 import org.example.item.PurchaseCart;
 import org.example.tax.*;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -36,7 +36,7 @@ public class Application {
             int quantity = sc.nextInt();
             System.out.println(quantity + " " + itemName + " at " + itemPrice);
 
-            Item item = (new Item(itemName, new Price(itemPrice), ItemType.valueOf(itemType), imported));
+            Item item = (new Item(itemName, new BigDecimal(itemPrice), ItemType.valueOf(itemType), imported));
             cart.add(item, quantity);
 
             System.out.println("Do you want to add more [ Y / Yes ] ?");

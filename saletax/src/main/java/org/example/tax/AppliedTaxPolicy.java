@@ -31,7 +31,7 @@ public class AppliedTaxPolicy implements AppliedTax {
 
     @Override
     public BigDecimal calculateTax(PurchaseCartItem item, Tax tax) {
-        return item.getItem().getPrice().getPrice().multiply(tax.getRate());
+        return item.getItem().getPrice().multiply(tax.getRate());
     }
 
 
